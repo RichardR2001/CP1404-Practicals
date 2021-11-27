@@ -3,6 +3,7 @@ CP1404/CP5632 - Practical
 Broken program to determine score status
 Created on 27-11-21 by Richard Reynard
 """
+import random
 
 
 def main():
@@ -24,3 +25,8 @@ def determine_grades(score):
 
 
 main()
+
+random_score = random.randint(0, 100)
+print(f"Score: {random_score}")
+print(determine_grades(random_score))
+
