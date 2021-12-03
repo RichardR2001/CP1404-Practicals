@@ -11,6 +11,7 @@ MAXIMUM_NUMBER = 45
 
 
 def main():
+    """Get user input and print lines of numbers according to it"""
     user_number = int(input("How many quick picks? "))
     while user_number < 0:
         print("Invalid input")
