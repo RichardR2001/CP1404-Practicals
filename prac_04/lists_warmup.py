@@ -1,3 +1,9 @@
+"""
+CP1404 Practical 3
+Warm-up Questions
+Created on 3-12-2021 by Richard Reynard
+"""
+
 numbers = [3, 1, 4, 1, 5, 9, 2]
 
 
