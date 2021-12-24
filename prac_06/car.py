@@ -32,4 +32,5 @@ class Car:
         return distance
 
     def __str__(self):
+        """Return a string representing a particular car."""
         return f"Car, fuel={self.fuel}, odometer={self.odometer}"

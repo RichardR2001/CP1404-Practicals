@@ -7,6 +7,7 @@ from CP1404.prac_06.guitar import Guitar
 
 
 def main():
+    """Ask user for their owned guitar and print all the available guitars."""
     guitars = []
 
     print("My guitars!")

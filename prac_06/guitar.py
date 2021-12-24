@@ -8,7 +8,7 @@ VINTAGE_AGE = 50
 
 
 class Guitar:
-    """Represent types of guitar"""
+    """Represent types of guitar."""
 
     def __init__(self, name="", year=0, cost=0):
         """Initialise a Guitar."""
@@ -21,8 +21,9 @@ class Guitar:
         return f"{self.name} ({self.year}) : ${self.cost}"
 
     def get_age(self):
-        """Determine the age of a guitar based on the year of reference"""
+        """Determine the age of a guitar based on the year of reference."""
         return CURRENT_YEAR - self.year
 
     def is_vintage(self):
+        """Determine if a guitar is considered vintage."""
         return self.get_age() >= VINTAGE_AGE
