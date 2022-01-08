@@ -16,4 +16,9 @@ class UnreliableCar(Car):
         super().__init__(name, fuel)
         self.reliability = reliability
 
-    
+    def drive(self, distance):
+        drive_reliability = randint(0, 100)
+        if drive_reliability >= self.reliability:
+            distance = 0
+        distance_driven = super().drive(distance)
+        return distance_driven
