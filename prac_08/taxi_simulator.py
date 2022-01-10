@@ -56,6 +56,36 @@ def display_taxis(taxis):
         print(f"{i} - {taxi}")
 
 
+def run_tests():
+    """..."""
+    car = Car("Mazda", 200)
+    car.drive(50)
+    print(f"fuel = {car.fuel}")
+    print(f"odo  = {car.odometer}")
+    car.drive(100)
+    print(f"fuel = {car.fuel}")
+    print(f"odo  = {car.odometer}")
+    print(car)
+
+    distance = float(input("Drive how far? "))
+    while distance > 0:
+        distance_travelled = car.drive(distance)
+        print(f"{car} travelled {distance_travelled}")
+        distance = int(input("Drive how far? "))
+
+    taxi = Taxi("Prius 1", 100)
+    print(taxi)
+    taxi.drive(35)
+    print(f"Taxi fare: {taxi.get_fare()}")
+    print(f"odo  = {taxi.odometer}")
+    print(f"fuel = {taxi.fuel}")
+
+    silver_taxi = SilverServiceTaxi("Hummer", 100, 4)
+    silver_taxi.drive(20)
+    print(silver_taxi)
+    print(f"Total fare: ${silver_taxi.get_fare()}")
 
 
-main()
+run_tests()
+# main()
+
