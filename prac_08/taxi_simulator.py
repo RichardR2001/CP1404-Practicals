@@ -42,6 +42,12 @@ def main():
 
 
 
+def display_taxis(taxis):
+    """..."""
+    for i, taxi in enumerate(taxis):
+        print(f"{i} - {taxi}")
+
+
 
 
 main()
