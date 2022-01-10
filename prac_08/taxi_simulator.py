@@ -29,6 +29,16 @@ def main():
                 print("Invalid taxi choice")
             except ValueError:
                 print("Invalid taxi choice")
+        elif user_choice == "d":
+            if current_taxi:
+                current_taxi.start_fare()
+                drive_distance = float(input("Drive how far? "))
+                current_taxi.drive(drive_distance)
+                trip_fare = current_taxi.get_fare()
+                print(f"Your {current_taxi.name} trip cost you ${trip_fare}")
+                total_fare = total_fare + trip_fare
+            else:
+                print("You need to choose a taxi before you can drive")
 
 
 
