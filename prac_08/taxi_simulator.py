@@ -39,7 +39,15 @@ def main():
                 total_fare = total_fare + trip_fare
             else:
                 print("You need to choose a taxi before you can drive")
+        else:
+            print("Invalid option")
+        print("Bill to date: ${:.2f}".format(total_fare))
+        print(MENU)
+        user_choice = input(">>> ").lower()
 
+    print(f"Total trip cost: ${total_fare}")
+    print("Taxis are now:")
+    display_taxis(taxis)
 
 
 def display_taxis(taxis):
