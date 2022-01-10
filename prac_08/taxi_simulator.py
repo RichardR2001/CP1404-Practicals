@@ -11,7 +11,7 @@ MENU = "q)uit, c)hoose taxi, d)rive"
 
 
 def main():
-    """..."""
+    """Taxi will calculate the fare based on the user's input distance and type of taxi car."""
     taxis = [Taxi("Prius", 100), SilverServiceTaxi("Limo", 100, 2), SilverServiceTaxi("Hummer", 200, 4)]
     current_taxi = None
     total_fare = 0
@@ -51,13 +51,13 @@ def main():
 
 
 def display_taxis(taxis):
-    """..."""
+    """Display all available taxis."""
     for i, taxi in enumerate(taxis):
         print(f"{i} - {taxi}")
 
 
 def run_tests():
-    """..."""
+    """Tests the usability of Car and Taxi classes."""
     car = Car("Mazda", 200)
     car.drive(50)
     print(f"fuel = {car.fuel}")
@@ -87,5 +87,5 @@ def run_tests():
 
 
 run_tests()
-# main()
+main()
 

@@ -7,7 +7,8 @@ from CP1404.prac_08.taxi import Taxi
 
 
 class SilverServiceTaxi(Taxi):
-    """..."""
+    """SilverServiceTaxi is an app to calculate the fare and display the fare based on the price per km and
+       fanciness."""
     flagfall = 4.50
 
     def __init__(self, name, fuel, fanciness):
