@@ -1,3 +1,7 @@
+"""
+CP1404 - Practical 9
+OS - Files to sort
+"""
 import os
 import shutil
 
