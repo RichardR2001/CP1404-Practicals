@@ -1,3 +1,8 @@
+"""
+CP1404 - Practical 10
+Wikipedia API & Python Library
+Created on 24-01-2022 by Richard Reynard.
+"""
 import wikipedia
 
 user_input = input("Enter a word or phrase to search: ")
